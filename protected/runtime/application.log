@@ -1,0 +1,647 @@
+2014/11/01 18:28:50 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CDbConnection.teblePrefix".' in Z:\home\localhost\www\one_yii\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\framework\YiiBase.php(220): CComponent->__set('teblePrefix', 'o_')
+#1 Z:\home\localhost\www\one_yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 Z:\home\localhost\www\one_yii\framework\base\CModule.php(103): CModule->getComponent('db')
+#3 Z:\home\localhost\www\one_yii\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#4 Z:\home\localhost\www\one_yii\framework\web\CFormModel.php(39): ModelCode->init()
+#5 Z:\home\localhost\www\one_yii\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#6 Z:\home\localhost\www\one_yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#7 Z:\home\localhost\www\one_yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#8 Z:\home\localhost\www\one_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\localhost\www\one_yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 Z:\home\localhost\www\one_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#13 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/one_yii/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/one_yii/index.php?r=gii/default/index
+---
+2014/11/01 21:14:37 [error] [exception.CException] exception 'CException' with message 'Столбец должен быть указан в формате "Name:Type:Label". "Тип" и "Заголовок" не обязательны.' in Z:\home\localhost\www\one_yii\framework\zii\widgets\grid\CGridView.php:412
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\framework\zii\widgets\grid\CGridView.php(383): CGridView->createDataColumn('???????????????...')
+#1 Z:\home\localhost\www\one_yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#2 Z:\home\localhost\www\one_yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 Z:\home\localhost\www\one_yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 Z:\home\localhost\www\one_yii\protected\views\page\admin.php(51): CBaseController->widget('zii.widgets.gri...', Array)
+#5 Z:\home\localhost\www\one_yii\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#6 Z:\home\localhost\www\one_yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#7 Z:\home\localhost\www\one_yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#8 Z:\home\localhost\www\one_yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 Z:\home\localhost\www\one_yii\protected\controllers\PageController.php(143): CController->render('admin', Array)
+#10 Z:\home\localhost\www\one_yii\framework\web\actions\CInlineAction.php(49): PageController->actionAdmin()
+#11 Z:\home\localhost\www\one_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\localhost\www\one_yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 Z:\home\localhost\www\one_yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\localhost\www\one_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 Z:\home\localhost\www\one_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 Z:\home\localhost\www\one_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 Z:\home\localhost\www\one_yii\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\localhost\www\one_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#20 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('page/admin')
+#21 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/one_yii/index.php?r=page/admin
+HTTP_REFERER=http://localhost/one_yii/index.php?r=page
+---
+2014/11/01 22:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\home\localhost\www\one_yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('book')
+#3 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/one_yii/index.php?r=book
+---
+2014/11/01 22:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\home\localhost\www\one_yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('book/index')
+#3 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/one_yii/index.php?r=book/index
+---
+2014/11/01 22:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\home\localhost\www\one_yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('book/index')
+#3 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/one_yii/index.php?r=book/index
+---
+2014/11/01 22:30:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\home\localhost\www\one_yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('book')
+#3 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/one_yii/index.php?r=book
+---
+2014/11/02 20:54:47 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "BookController.b".' in Z:\home\localhost\www\one_yii\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\protected\views\book\index.php(2): CComponent->__get('b')
+#1 Z:\home\localhost\www\one_yii\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#2 Z:\home\localhost\www\one_yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', NULL, true)
+#3 Z:\home\localhost\www\one_yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', NULL, true)
+#4 Z:\home\localhost\www\one_yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 Z:\home\localhost\www\one_yii\protected\controllers\BookController.php(12): CController->render('index')
+#6 Z:\home\localhost\www\one_yii\framework\web\actions\CInlineAction.php(49): BookController->actionIndex()
+#7 Z:\home\localhost\www\one_yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\localhost\www\one_yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\localhost\www\one_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('book')
+#12 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/one_yii/index.php?r=book
+---
+2014/11/02 22:05:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\localhost\www\one_yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\one_yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 Z:\home\localhost\www\one_yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\one_yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\one_yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\one_yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\one_yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\one_yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 Z:\home\localhost\www\one_yii\framework\web\CWebApplication.php(141): CWebApplication->runController('book/index')
+#9 Z:\home\localhost\www\one_yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\one_yii\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/one_yii/index.php?r=book/index
+HTTP_REFERER=http://localhost/one_yii/index.php?r=site/login
+---
+2014/11/04 19:47:45 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'one.bl_news' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `bl_news`.
+in Z:\home\localhost\www\task887yii\index.php (13)
+2014/11/04 20:04:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "posts".' in Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php(141): CWebApplication->runController('posts')
+#1 Z:\home\localhost\www\task887yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\localhost\www\task887yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/task887yii/index.php?r=posts
+---
+2014/11/04 23:04:19 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (Z:\home\localhost\www\task887yii\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 Z:\home\localhost\www\task887yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 Z:\home\localhost\www\task887yii\protected\models\LoginForm.php(72): CWebUser->login()
+#2 Z:\home\localhost\www\task887yii\protected\controllers\SiteController.php(94): LoginForm->login()
+#3 Z:\home\localhost\www\task887yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 Z:\home\localhost\www\task887yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\localhost\www\task887yii\framework\web\CController.php(286): SiteController->runAction()
+#6 Z:\home\localhost\www\task887yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\localhost\www\task887yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\task887yii\index.php(13): CWebApplication->run()
+REQUEST_URI=/task887yii/index.php?r=site/login
+in Z:\home\localhost\www\task887yii\protected\models\LoginForm.php (72)
+in Z:\home\localhost\www\task887yii\protected\controllers\SiteController.php (94)
+in Z:\home\localhost\www\task887yii\index.php (13)
+2014/11/04 23:06:37 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "Users".
+in Z:\home\localhost\www\task887yii\protected\controllers\UsersController.php (72)
+in Z:\home\localhost\www\task887yii\index.php (13)
+2014/11/04 23:07:55 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "Users".
+in Z:\home\localhost\www\task887yii\protected\controllers\UsersController.php (73)
+in Z:\home\localhost\www\task887yii\index.php (13)
+2014/11/04 23:07:55 [error] [php] Cannot modify header information - headers already sent by (output started at Z:\home\localhost\www\task887yii\protected\controllers\UsersController.php:72) (Z:\home\localhost\www\task887yii\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 Z:\home\localhost\www\task887yii\protected\controllers\UsersController.php(75): UsersController->redirect()
+#1 Z:\home\localhost\www\task887yii\framework\web\actions\CInlineAction.php(49): UsersController->actionCreate()
+#2 Z:\home\localhost\www\task887yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\localhost\www\task887yii\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#4 Z:\home\localhost\www\task887yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\localhost\www\task887yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\localhost\www\task887yii\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#7 Z:\home\localhost\www\task887yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\localhost\www\task887yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\localhost\www\task887yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#10 Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php(282): UsersController->run()
+#11 Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\localhost\www\task887yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\localhost\www\task887yii\index.php(13): CWebApplication->run()
+REQUEST_URI=/task887yii/index.php?r=users/create
+in Z:\home\localhost\www\task887yii\protected\controllers\UsersController.php (75)
+in Z:\home\localhost\www\task887yii\index.php (13)
+2014/11/04 23:09:51 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "Users".
+in Z:\home\localhost\www\task887yii\protected\controllers\UsersController.php (72)
+in Z:\home\localhost\www\task887yii\index.php (13)
+2014/11/04 23:10:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\localhost\www\task887yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\task887yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 Z:\home\localhost\www\task887yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\task887yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\task887yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\task887yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\task887yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\task887yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 Z:\home\localhost\www\task887yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/delete')
+#9 Z:\home\localhost\www\task887yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\task887yii\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task887yii/index.php?r=users/delete&id=4
+HTTP_REFERER=http://localhost/task887yii/index.php?r=users/view&id=4
+---
+2014/11/04 23:10:58 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "Users".
+in Z:\home\localhost\www\task887yii\protected\controllers\UsersController.php (72)
+in Z:\home\localhost\www\task887yii\index.php (13)
+2014/11/05 11:22:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in X:\home\task887yii\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 X:\home\task887yii\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 X:\home\task887yii\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 X:\home\task887yii\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 X:\home\task887yii\www\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 X:\home\task887yii\www\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 X:\home\task887yii\www\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 X:\home\task887yii\www\framework\db\ar\CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 X:\home\task887yii\www\protected\components\UserIdentity.php(20): CActiveRecord->find('name=:name', Array)
+#8 X:\home\task887yii\www\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 X:\home\task887yii\www\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 X:\home\task887yii\www\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 X:\home\task887yii\www\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 X:\home\task887yii\www\protected\controllers\SiteController.php(94): CModel->validate()
+#13 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 X:\home\task887yii\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('login')
+#18 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 X:\home\task887yii\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://task887yii/index.php?r=site/login
+---
+2014/11/05 11:26:23 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "Users".
+in X:\home\task887yii\www\protected\controllers\UsersController.php (72)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 11:34:06 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebUser.checkAccess".' in X:\home\task887yii\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\auth\CWebUser.php(146): CComponent->__get('checkAccess')
+#1 X:\home\task887yii\www\protected\views\site\index.php(17): CWebUser->__get('checkAccess')
+#2 X:\home\task887yii\www\framework\web\CBaseController.php(126): require('X:\home\task887...')
+#3 X:\home\task887yii\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\task887...', NULL, true)
+#4 X:\home\task887yii\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\task887...', NULL, true)
+#5 X:\home\task887yii\www\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 X:\home\task887yii\www\protected\controllers\SiteController.php(32): CController->render('index')
+#7 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 X:\home\task887yii\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('')
+#12 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 X:\home\task887yii\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php
+---
+2014/11/05 11:34:28 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebUser.checkAccess".' in X:\home\task887yii\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\auth\CWebUser.php(146): CComponent->__get('checkAccess')
+#1 X:\home\task887yii\www\protected\controllers\SiteController.php(32): CWebUser->__get('checkAccess')
+#2 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 X:\home\task887yii\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 X:\home\task887yii\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2014/11/05 11:34:46 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebUser.checkAccess".' in X:\home\task887yii\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\auth\CWebUser.php(146): CComponent->__get('checkAccess')
+#1 X:\home\task887yii\www\protected\controllers\SiteController.php(32): CWebUser->__get('checkAccess')
+#2 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 X:\home\task887yii\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 X:\home\task887yii\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2014/11/05 12:34:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in X:\home\task887yii\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 X:\home\task887yii\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 X:\home\task887yii\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#6 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 X:\home\task887yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=post/admin
+HTTP_REFERER=http://task887yii/index.php?r=post/index
+---
+2014/11/05 12:37:37 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:113) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:38:39 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:38:51 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:45:36 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:45:46 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:46:49 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:47:37 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:47:47 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:48:16 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:48:39 [error] [php] Cannot modify header information - headers already sent by (output started at X:\home\task887yii\www\protected\models\Post.php:114) (X:\home\task887yii\www\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 X:\home\task887yii\www\protected\controllers\PostController.php(74): PostController->redirect()
+#1 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#2 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#4 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#11 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/create
+in X:\home\task887yii\www\protected\controllers\PostController.php (74)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 12:52:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in X:\home\task887yii\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 X:\home\task887yii\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 X:\home\task887yii\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#6 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/delete')
+#9 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 X:\home\task887yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=post/delete&id=15
+HTTP_REFERER=http://task887yii/index.php?r=post/view&id=15
+---
+2014/11/05 12:54:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "usere".' in X:\home\task887yii\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('usere')
+#1 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\task887yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=usere
+---
+2014/11/05 12:54:21 [warning] [application] Не удалось присвоить небезопасный атрибут "password" класса "Users".
+in X:\home\task887yii\www\protected\controllers\UsersController.php (72)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 13:23:20 [error] [exception.CException] exception 'CException' with message 'Атрибут должен быть указан в формате "Имя:Тип:Заголовок". "Тип" и "Заголовок" не обязательны.' in X:\home\task887yii\www\framework\zii\widgets\CDetailView.php:183
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\CBaseController.php(173): CDetailView->run()
+#1 X:\home\task887yii\www\protected\views\post\view.php(30): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 X:\home\task887yii\www\framework\web\CBaseController.php(126): require('X:\home\task887...')
+#3 X:\home\task887yii\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\task887...', Array, true)
+#4 X:\home\task887yii\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\task887...', Array, true)
+#5 X:\home\task887yii\www\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 X:\home\task887yii\www\protected\controllers\PostController.php(56): CController->render('view', Array)
+#7 [internal function]: PostController->actionView('16')
+#8 X:\home\task887yii\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#9 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#10 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 X:\home\task887yii\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#17 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('view')
+#19 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#20 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 X:\home\task887yii\www\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=post/view&id=16
+HTTP_REFERER=http://task887yii/index.php?r=post/index
+---
+2014/11/05 13:24:02 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (X:\home\task887yii\www\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 X:\home\task887yii\www\framework\utils\CFormatter.php(128): CFormatter->formatText()
+#1 X:\home\task887yii\www\framework\zii\widgets\CDetailView.php(218): CFormatter->format()
+#2 X:\home\task887yii\www\framework\web\CBaseController.php(173): CDetailView->run()
+#3 X:\home\task887yii\www\protected\views\post\view.php(29): PostController->widget()
+#4 X:\home\task887yii\www\framework\web\CBaseController.php(126): require()
+#5 X:\home\task887yii\www\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 X:\home\task887yii\www\framework\web\CController.php(869): PostController->renderFile()
+#7 X:\home\task887yii\www\framework\web\CController.php(782): PostController->renderPartial()
+#8 X:\home\task887yii\www\protected\controllers\PostController.php(56): PostController->render()
+#9 unknown(0): PostController->actionView()
+#10 X:\home\task887yii\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#11 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#12 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#14 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#16 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#17 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#18 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#19 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#20 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#21 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=16
+in X:\home\task887yii\www\protected\views\post\view.php (29)
+in X:\home\task887yii\www\protected\controllers\PostController.php (56)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 13:38:33 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`news`.`bl_comment`, CONSTRAINT `bl_comment_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `bl_post` (`id`) ON DELETE CASCADE). Выполнявшийся SQL-запрос: INSERT INTO `bl_comment` (`author_id`, `text`, `date_time`, `post_id`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in X:\home\task887yii\www\protected\controllers\CommentController.php (73)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 13:38:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`news`.`bl_comment`, CONSTRAINT `bl_comment_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `bl_post` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `bl_comment` (`author_id`, `text`, `date_time`, `post_id`) VALUES (:yp0, :yp1, :yp2, :yp3)' in X:\home\task887yii\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 X:\home\task887yii\www\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 X:\home\task887yii\www\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 X:\home\task887yii\www\protected\controllers\CommentController.php(73): CActiveRecord->save()
+#3 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(49): CommentController->actionCreate()
+#4 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 X:\home\task887yii\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#11 X:\home\task887yii\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('create')
+#13 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/create')
+#14 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 X:\home\task887yii\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=comment/create
+HTTP_REFERER=http://task887yii/index.php?r=comment/create
+---
+2014/11/05 13:44:58 [error] [php] Object of class Comment could not be converted to string (X:\home\task887yii\www\protected\views\post\view.php:41)
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\CController.php(869): PostController->renderFile()
+#1 X:\home\task887yii\www\framework\web\CController.php(782): PostController->renderPartial()
+#2 X:\home\task887yii\www\protected\controllers\PostController.php(56): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 X:\home\task887yii\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#13 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#15 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=16
+in X:\home\task887yii\www\protected\views\post\view.php (41)
+in X:\home\task887yii\www\protected\controllers\PostController.php (56)
+in X:\home\task887yii\www\index.php (13)
+2014/11/05 13:45:01 [error] [php] Object of class Comment could not be converted to string (X:\home\task887yii\www\protected\views\post\view.php:41)
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\CController.php(869): PostController->renderFile()
+#1 X:\home\task887yii\www\framework\web\CController.php(782): PostController->renderPartial()
+#2 X:\home\task887yii\www\protected\controllers\PostController.php(56): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 X:\home\task887yii\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 X:\home\task887yii\www\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 X:\home\task887yii\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 X:\home\task887yii\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 X:\home\task887yii\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 X:\home\task887yii\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 X:\home\task887yii\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 X:\home\task887yii\www\framework\web\CController.php(291): CFilterChain->run()
+#13 X:\home\task887yii\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 X:\home\task887yii\www\framework\web\CWebApplication.php(282): PostController->run()
+#15 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 X:\home\task887yii\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=16
+in X:\home\task887yii\www\protected\views\post\view.php (41)
+in X:\home\task887yii\www\protected\controllers\PostController.php (56)
+in X:\home\task887yii\www\index.php (13)

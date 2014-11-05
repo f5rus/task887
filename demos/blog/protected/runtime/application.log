@@ -1,0 +1,28 @@
+2014/11/05 13:16:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in X:\home\task887yii\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('users')
+#1 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\task887yii\www\demos\blog\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/demos/blog/index.php/users
+---
+2014/11/05 13:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "2".' in X:\home\task887yii\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\CController.php(270): CController->missingAction('2')
+#1 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('2')
+#2 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/2')
+#3 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\task887yii\www\demos\blog\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/demos/blog/index.php/post/2
+---
+2014/11/05 13:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "2".' in X:\home\task887yii\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\task887yii\www\framework\web\CController.php(270): CController->missingAction('2')
+#1 X:\home\task887yii\www\framework\web\CWebApplication.php(282): CController->run('2')
+#2 X:\home\task887yii\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/2')
+#3 X:\home\task887yii\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\task887yii\www\demos\blog\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/demos/blog/index.php/post/2/
+---
